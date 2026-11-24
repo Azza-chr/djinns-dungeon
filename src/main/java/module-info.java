@@ -7,4 +7,7 @@ module tn.designpattern.djinnsdungeon {
 
     exports tn.designpattern.djinnsdungeon.model.composite;
     opens tn.designpattern.djinnsdungeon.model.composite to org.junit.platform.commons;
+
+    exports tn.designpattern.djinnsdungeon.model.decorator;
+    opens tn.designpattern.djinnsdungeon.model.decorator to org.junit.platform.commons;
 }
