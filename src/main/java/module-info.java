@@ -10,4 +10,9 @@ module tn.designpattern.djinnsdungeon {
 
     exports tn.designpattern.djinnsdungeon.model.decorator;
     opens tn.designpattern.djinnsdungeon.model.decorator to org.junit.platform.commons;
+
+    exports tn.designpattern.djinnsdungeon.model.state;
+    opens tn.designpattern.djinnsdungeon.model.state to org.junit.platform.commons;
+
+
 }
