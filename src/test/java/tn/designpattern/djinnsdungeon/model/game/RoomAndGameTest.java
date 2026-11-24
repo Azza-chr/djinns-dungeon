@@ -88,4 +88,24 @@ class RoomAndGameTest {
         assertFalse(game.playAll());
         assertFalse(hero.isAlive());
     }
+
+    @Test
+    void turnByTurnPlay() {
+        Hero hero = new Hero(100);
+        Game game = new Game(hero,
+                new Dungeon(List.of(new CombatRoomGenerator().prepareRoom(desert))));
+
+        game.enterNextRoom();
+        assertEquals(96, hero.getHp());          // piège -4
+        game.playTurn();
+        assertEquals(88, hero.getHp());          // 2 scorpions : -8
+        assertFalse(game.getCurrentRoom().isCleared());
+
+        game.playTurn();
+        game.playTurn();
+        game.playTurn();
+        assertTrue(game.getCurrentRoom().isCleared());
+        assertEquals(80, hero.getHp());
+        assertTrue(game.isVictory());
+    }
 }

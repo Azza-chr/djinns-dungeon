@@ -22,5 +22,7 @@ module tn.designpattern.djinnsdungeon {
     exports tn.designpattern.djinnsdungeon.model.game;
     opens tn.designpattern.djinnsdungeon.model.game to org.junit.platform.commons;
 
+    exports tn.designpattern.djinnsdungeon.ui;
+
 
 }
