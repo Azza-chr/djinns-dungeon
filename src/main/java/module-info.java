@@ -17,5 +17,10 @@ module tn.designpattern.djinnsdungeon {
     exports tn.designpattern.djinnsdungeon.model.theme;
     opens tn.designpattern.djinnsdungeon.model.theme to org.junit.platform.commons;
 
+    exports tn.designpattern.djinnsdungeon.model.factory;
+    opens tn.designpattern.djinnsdungeon.model.factory to org.junit.platform.commons;
+    exports tn.designpattern.djinnsdungeon.model.game;
+    opens tn.designpattern.djinnsdungeon.model.game to org.junit.platform.commons;
+
 
 }
