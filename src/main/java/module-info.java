@@ -24,5 +24,7 @@ module tn.designpattern.djinnsdungeon {
 
     exports tn.designpattern.djinnsdungeon.ui;
 
+    requires java.desktop;
+
 
 }
